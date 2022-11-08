@@ -23,12 +23,12 @@ SetConsoleOutputCP(1251);
 SetConsoleCP(1251);
 system("color 70" );
 
-	//Перки
+	//РџРµСЂРєРё
 	int zagad, mass, aq, zagadP = 0;
 	bool zapros;
 	char nn;
 
-	//Скок символов
+	//РЎРєРѕРє СЃРёРјРІРѕР»РѕРІ
 	char pchar[67] = {
 
 			 '0',
@@ -54,18 +54,18 @@ system("color 70" );
 
 		'_', '$', '!', '?', '&'
 	};
-    //Пароль
+
 	vector<char> password;
 
 	srand(time(NULL));
 
 	while(true){
-		cout << "Если хотите начать генерировать пароль, то нажмите 1\nЕсли нет, то 0" << endl;
+		cout << "Р•СЃР»Рё С…РѕС‚РёС‚Рµ РЅР°С‡Р°С‚СЊ РіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ РїР°СЂРѕР»СЊ, С‚Рѕ РЅР°Р¶РјРёС‚Рµ 1\nР•СЃР»Рё РЅРµС‚, С‚Рѕ 0" << endl;
 		cin >> zapros;
         system("cls");
 
 		if (zapros == 1){
-			cout << "Сколько символов будет в пароле: ";
+			cout << "РЎРєРѕР»СЊРєРѕ СЃРёРјРІРѕР»РѕРІ Р±СѓРґРµС‚ РІ РїР°СЂРѕР»Рµ: ";
 			cin >> zagad;
 			zagadP = zagad;
 			system("cls");
@@ -106,13 +106,6 @@ system("color 70" );
 				nn = pchar[mass];
 				password.push_back(nn);
 
-				//Вывод
-				/*cout << "Это zagad " << zagad << endl;
-				cout << "Это q " << q << endl;
-				cout << "Это mass " << mass << endl;
-				cout << "Это aq " << aq << endl;
-				cout << "Это qwe " << qwe << endl;
-				cout << endl;*/
 				zagad--;
 			}
 
@@ -122,7 +115,7 @@ system("color 70" );
 			}
 			cout << endl << "====================================================================================" << endl;
 
-			cout << "Чтобы сделать ещё один пароль нажмите Enter" << endl;
+			cout << "Р§С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ РµС‰С‘ РѕРґРёРЅ РїР°СЂРѕР»СЊ РЅР°Р¶РјРёС‚Рµ Enter" << endl;
 
 			system("PAUSE");
 			password.clear();
